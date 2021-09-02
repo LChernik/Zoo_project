@@ -17,14 +17,14 @@ const setResolution = (size: number) =>
     }`;
 
 export const media = {
-  small: setResolution(600),
-  medium: setResolution(1024),
-  large: setResolution(1440),
-  xlarge: setResolution(1920),
+  small: setResolution(320),
+  medium: setResolution(640),
+  large: setResolution(1200),
+  xlarge: setResolution(1400),
 };
-
+// const sizes = ["small", "medium", "large", "xlarge"];
 // Iterate through the sizes and create a media template
-//  const media1 = (Object.keys(sizes) as Array<keyof typeof sizes>).reduce(
+// export const media = (Object.keys(sizes) as Array<keyof typeof sizes>).reduce(
 //   (acc, label) => {
 //     acc[label] = (first: any, ...interpolations: any[]) => css`
 //       @media (min-width: ${sizes[label]}px) {
@@ -34,7 +34,7 @@ export const media = {
 
 //     return acc;
 //   },
-//   {} as { [key in keyof typeof sizes]: MediaFunction },
+//   {} as { [key in keyof typeof sizes]: any },
 // );
 
 /*

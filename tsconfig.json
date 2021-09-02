@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["webpack-env"],
     "noImplicitAny": false,
     "target": "es5",
     "lib": [

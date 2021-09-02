@@ -13,6 +13,9 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './pages/HomePage/Loadable';
+import { MapPage } from './pages/MapPage/Loadable';
+import { ZoosPage } from './pages/ZoosPage/Loadable';
+import { ContactPage } from './pages/ContactPage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 
@@ -30,6 +33,9 @@ export function App() {
 
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/map" component={MapPage} />
+        <Route exact path="/zoos" component={ZoosPage} />
+        <Route exact path="/contact-us" component={ContactPage}/>
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

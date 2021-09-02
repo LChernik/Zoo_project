@@ -1,3 +1,6 @@
 {
-  "title": "welcome"
+  "header.menu.about": "about",
+  "header.menu.map": "map",
+  "header.menu.zoos": "zoos",
+  "header.menu.contact-us": "contact us"
 }
