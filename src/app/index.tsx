@@ -12,6 +12,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
 
+import { Header } from './components/Header';
 import { HomePage } from './pages/HomePage/Loadable';
 import { MapPage } from './pages/MapPage/Loadable';
 import { ZoosPage } from './pages/ZoosPage/Loadable';
@@ -30,7 +31,7 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/map" component={MapPage} />

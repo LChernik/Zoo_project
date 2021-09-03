@@ -61,7 +61,6 @@ export const Menu = styled.ul`
 `;
 
 
-
 const SocialMediaContainer = styled.div`
   ${media.large`
     margin-left: 138px;
@@ -73,16 +72,18 @@ const SocialMediaContainer = styled.div`
   min-width: 180px;
 `;
 
-const MenuLinks = [
-  {name: "about", path:"/"},
-  {name: "map", path:"/map"},
-  {name: "zoos", path:"/zoos"},
-  {name: "contact us", path:"/contact-us"},
-];
+
 
 export function Header() {
   
   const { t } = useTranslation();
+
+  const MenuLinks = [
+    {name: t('header.menu.about'), path:"/"},
+    {name: t('header.menu.map'), path:"/map"},
+    {name: t('header.menu.zoos'), path:"/zoos"},
+    {name: t('header.menu.contact-us'), path:"/contact-us"},
+  ];
 
   return (
     <>
@@ -95,11 +96,6 @@ export function Header() {
               <li>{link.name}</li>
             </NavLink>
           ))}
-
-          {/* <NavLink to='/'>{t('header.menu.about')}</NavLink>
-          <NavLink to='/map'>{t('header.menu.map')}</NavLink>
-          <NavLink to='/zoos'>{t('header.menu.zoos')}</NavLink>
-          <NavLink to='/contact-us'>{t('header.menu.contact-us')}</NavLink> */}
         </Menu>
         <SocialMediaContainer>
           <SocialMedia/>
