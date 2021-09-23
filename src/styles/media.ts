@@ -1,6 +1,3 @@
-/*
- * Media queries utility
- */
 
 import {
   css,
@@ -49,13 +46,3 @@ export const media = {
 //     | InterpolationFunction<ThemedStyledProps<P, DefaultTheme>>,
 //   ...interpolations: Array<Interpolation<ThemedStyledProps<P, DefaultTheme>>>
 // ) => FlattenInterpolation<ThemedStyledProps<P, DefaultTheme>>;
-
-/* Example
-const SomeDiv = styled.div`
-  display: flex;
-  ....
-  ${media.medium`
-    display: block
-  `}
-`;
-*/

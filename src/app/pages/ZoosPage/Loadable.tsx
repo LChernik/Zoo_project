@@ -1,6 +1,3 @@
-/**
- * Asynchronously loads the component for MapPage
- */
 
  import { lazyLoad } from 'utils/loadable';
 
