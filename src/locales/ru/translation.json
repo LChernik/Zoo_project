@@ -2,5 +2,8 @@
     "header.menu.about": "о нас",
     "header.menu.map": "карта",
     "header.menu.zoos": "зоопарки",
-    "header.menu.contact-us": "контакт"
+    "header.menu.contact-us": "контакт",
+    "welcome.heading": "Смотри любимых животных онлайн",
+    "welcome.subtitle": "Исследуй восхитительный мир животных в их естественной среде обитания.",
+    "welcome.button": "лайв камера"
 }

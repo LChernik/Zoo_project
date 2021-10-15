@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import {
     ContentWrapper,
     Content,
@@ -7,18 +9,17 @@ import {
     WelcomeButton
 } from './Welcome.elements'
 
-export function Welcome({
-    headline,
-    description,
-    buttonLabel
-}) {
+export function Welcome() {
+
+    const { t } = useTranslation();
+
     return (
         <div>
             <ContentWrapper>
                     <Content>
-                        <Heading>{headline}</Heading>
-                        <Subtitle>{description}</Subtitle>
-                        <WelcomeButton>{buttonLabel}</WelcomeButton>
+                        <Heading>{t(`welcome.heading`)}</Heading>
+                        <Subtitle>{t(`welcome.subtitle`)}</Subtitle>
+                        <WelcomeButton>{t(`welcome.button`)}</WelcomeButton>
                     </Content>
             </ContentWrapper>
         </div>

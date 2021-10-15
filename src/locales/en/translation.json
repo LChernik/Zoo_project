@@ -2,5 +2,8 @@
   "header.menu.about": "about",
   "header.menu.map": "map",
   "header.menu.zoos": "zoos",
-  "header.menu.contact-us": "contact us"
+  "header.menu.contact-us": "contact us",
+  "welcome.heading": "Watch your favorite animal online",
+  "welcome.subtitle": "Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.",
+  "welcome.button": "view live cam"
 }

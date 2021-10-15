@@ -30,6 +30,10 @@ export const NavbarContainer = styled(Container)`
   `;
 
 export const Logo = styled(LogoIcon)`
+  ${media.small`
+    height: 50px;
+    width: 96px;
+  `}
   ${media.large`
     margin-right: 224px;
   `}
@@ -42,7 +46,6 @@ export const NavMenu = styled.ul<{ click: boolean }>`
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 1.125rem;
   font-weight: 600;
   line-height: 150%;
   padding-top: 12px;
@@ -62,7 +65,6 @@ export const NavMenu = styled.ul<{ click: boolean }>`
   }
  
   ${media.small`
-    display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -76,9 +78,21 @@ export const NavMenu = styled.ul<{ click: boolean }>`
     background: #F58021;
   `}
 
-  ${media.large`
-    min-width: 432px;
+  ${media.medium`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    position: relative;
+    max-width: 432px;
+    padding: 12px 0 0 0;
   `}
+
+  ${media.large`
+    font-size: 1.125rem;
+  `}
+  
   ${media.xlarge`
     min-width: 483px;
   `}
