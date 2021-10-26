@@ -7,7 +7,7 @@ export function ContactPage() {
     <>
       <Helmet>
         <title>Contact Us Page</title>
-        <meta name="description" content="A Boilerplate application homepage" />
+        <meta name="description" content="Info about how to contact the online zoo" />
       </Helmet>
     </>
   );

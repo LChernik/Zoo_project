@@ -7,7 +7,7 @@ export function ZoosPage() {
     <>
       <Helmet>
         <title>Zoos Page</title>
-        <meta name="description" content="A Boilerplate application homepage" />
+        <meta name="description" content="Animals info" />
       </Helmet>
     </>
   );

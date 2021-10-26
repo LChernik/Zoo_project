@@ -7,7 +7,7 @@ export function MapPage() {
     <>
       <Helmet>
         <title>Map Page</title>
-        <meta name="description" content="A Boilerplate application homepage" />
+        <meta name="description" content="Information about the animals geolocation on the map" />
       </Helmet>
     </>
   );

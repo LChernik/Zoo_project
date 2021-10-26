@@ -15,7 +15,7 @@ export function HomePage() {
     <>
       <Helmet>
         <title>Home Page</title>
-        <meta name="description" content="A Boilerplate application homepage" />
+        <meta name="description" content="Info about the online zoo" />
       </Helmet>
       <Welcome />
       <Gallery />
